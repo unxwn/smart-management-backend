@@ -1,0 +1,495 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|solutionrelative:clinic.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.api\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|solutionrelative:clinic.api\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749DA2C5-0ADE-420D-AA51-4388CA7CEC9E}|Clinic.Infrastructure\\Clinic.Infrastructure.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.infrastructure\\data\\cliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749DA2C5-0ADE-420D-AA51-4388CA7CEC9E}|Clinic.Infrastructure\\Clinic.Infrastructure.csproj|solutionrelative:clinic.infrastructure\\data\\cliniccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.domain\\entities\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|solutionrelative:clinic.domain\\entities\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.domain\\entities\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|solutionrelative:clinic.domain\\entities\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|solutionrelative:clinic.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.domain\\entities\\visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|solutionrelative:clinic.domain\\entities\\visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|solutionrelative:clinic.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|solutionrelative:clinic.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749DA2C5-0ADE-420D-AA51-4388CA7CEC9E}|Clinic.Infrastructure\\Clinic.Infrastructure.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.infrastructure\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749DA2C5-0ADE-420D-AA51-4388CA7CEC9E}|Clinic.Infrastructure\\Clinic.Infrastructure.csproj|solutionrelative:clinic.infrastructure\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.api\\controllers\\medicalrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|solutionrelative:clinic.api\\controllers\\medicalrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.api\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|solutionrelative:clinic.api\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.api\\controllers\\prescriptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|solutionrelative:clinic.api\\controllers\\prescriptionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.api\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|solutionrelative:clinic.api\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.api\\controllers\\visitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|solutionrelative:clinic.api\\controllers\\visitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.api\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|solutionrelative:clinic.api\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.api\\controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|solutionrelative:clinic.api\\controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|solutionrelative:clinic.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CDA53AF-C02A-4607-B749-FB650A9F935C}|Clinic.Api\\Clinic.Api.csproj|solutionrelative:clinic.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|solutionrelative:clinic.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.domain\\entities\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|solutionrelative:clinic.domain\\entities\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.domain\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|solutionrelative:clinic.domain\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|solutionrelative:clinic.domain\\entities\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.domain\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|solutionrelative:clinic.domain\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749DA2C5-0ADE-420D-AA51-4388CA7CEC9E}|Clinic.Infrastructure\\Clinic.Infrastructure.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749DA2C5-0ADE-420D-AA51-4388CA7CEC9E}|Clinic.Infrastructure\\Clinic.Infrastructure.csproj|solutionrelative:clinic.infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|solutionrelative:clinic.domain\\entities\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749DA2C5-0ADE-420D-AA51-4388CA7CEC9E}|Clinic.Infrastructure\\Clinic.Infrastructure.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.infrastructure\\clinic.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{749DA2C5-0ADE-420D-AA51-4388CA7CEC9E}|Clinic.Infrastructure\\Clinic.Infrastructure.csproj|solutionrelative:clinic.infrastructure\\clinic.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|d:\\university\\softwareengineering\\finalproject\\clinicsolution\\clinic.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E31120-ADC8-404F-A7BB-626DBAB8BF21}|Clinic.Domain\\Clinic.Domain.csproj|solutionrelative:clinic.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MedicalRecordsController.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\MedicalRecordsController.cs",
+              "RelativeDocumentMoniker": "Clinic.Api\\Controllers\\MedicalRecordsController.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\MedicalRecordsController.cs",
+              "RelativeToolTip": "Clinic.Api\\Controllers\\MedicalRecordsController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T13:06:51.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "Clinic.Api\\Controllers\\PaymentsController.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "Clinic.Api\\Controllers\\PaymentsController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAswAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:54:16.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PrescriptionsController.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\PrescriptionsController.cs",
+              "RelativeDocumentMoniker": "Clinic.Api\\Controllers\\PrescriptionsController.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\PrescriptionsController.cs",
+              "RelativeToolTip": "Clinic.Api\\Controllers\\PrescriptionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:54:01.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "VisitsController.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\VisitsController.cs",
+              "RelativeDocumentMoniker": "Clinic.Api\\Controllers\\VisitsController.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\VisitsController.cs",
+              "RelativeToolTip": "Clinic.Api\\Controllers\\VisitsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:51:21.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "Clinic.Api\\Controllers\\AppointmentsController.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "Clinic.Api\\Controllers\\AppointmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:51:08.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DoctorsController.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\DoctorsController.cs",
+              "RelativeDocumentMoniker": "Clinic.Api\\Controllers\\DoctorsController.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\DoctorsController.cs",
+              "RelativeToolTip": "Clinic.Api\\Controllers\\DoctorsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:48:53.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SuppliersController.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\SuppliersController.cs",
+              "RelativeDocumentMoniker": "Clinic.Api\\Controllers\\SuppliersController.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\SuppliersController.cs",
+              "RelativeToolTip": "Clinic.Api\\Controllers\\SuppliersController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:48:00.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Clinic.Api\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Clinic.Api\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:45:05.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Clinic.Api\\Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Clinic.Api\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:44:15.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Clinic.Domain\\Entities\\User.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Clinic.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T23:17:31.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Clinic.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Clinic.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T23:16:58.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PatientsController.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\PatientsController.cs",
+              "RelativeDocumentMoniker": "Clinic.Api\\Controllers\\PatientsController.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Controllers\\PatientsController.cs",
+              "RelativeToolTip": "Clinic.Api\\Controllers\\PatientsController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T19:40:52.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Clinic.Infrastructure.csproj",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Infrastructure\\Clinic.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Clinic.Infrastructure\\Clinic.Infrastructure.csproj",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Infrastructure\\Clinic.Infrastructure.csproj",
+              "RelativeToolTip": "Clinic.Infrastructure\\Clinic.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-19T18:39:42.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClinicContext.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Infrastructure\\Data\\ClinicContext.cs",
+              "RelativeDocumentMoniker": "Clinic.Infrastructure\\Data\\ClinicContext.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Infrastructure\\Data\\ClinicContext.cs",
+              "RelativeToolTip": "Clinic.Infrastructure\\Data\\ClinicContext.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAUwBQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T18:38:14.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Clinic.Api\\Program.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\Program.cs",
+              "RelativeToolTip": "Clinic.Api\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T15:08:40.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Clinic.Infrastructure\\Repositories\\GenericRepository.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "Clinic.Infrastructure\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:55:21.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "Clinic.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "Clinic.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:44:12.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Clinic.Api\\appsettings.json",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Api\\appsettings.json",
+              "RelativeToolTip": "Clinic.Api\\appsettings.json",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-19T14:26:16.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MedicalRecord.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\MedicalRecord.cs",
+              "RelativeDocumentMoniker": "Clinic.Domain\\Entities\\MedicalRecord.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\MedicalRecord.cs",
+              "RelativeToolTip": "Clinic.Domain\\Entities\\MedicalRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:07:13.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Payment.cs",
+              "RelativeDocumentMoniker": "Clinic.Domain\\Entities\\Payment.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Payment.cs",
+              "RelativeToolTip": "Clinic.Domain\\Entities\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:07:01.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Prescription.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Prescription.cs",
+              "RelativeDocumentMoniker": "Clinic.Domain\\Entities\\Prescription.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Prescription.cs",
+              "RelativeToolTip": "Clinic.Domain\\Entities\\Prescription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:06:34.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Visit.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Visit.cs",
+              "RelativeDocumentMoniker": "Clinic.Domain\\Entities\\Visit.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Visit.cs",
+              "RelativeToolTip": "Clinic.Domain\\Entities\\Visit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:05:58.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Doctor.cs",
+              "RelativeDocumentMoniker": "Clinic.Domain\\Entities\\Doctor.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Doctor.cs",
+              "RelativeToolTip": "Clinic.Domain\\Entities\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:05:52.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Patient.cs",
+              "RelativeDocumentMoniker": "Clinic.Domain\\Entities\\Patient.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Patient.cs",
+              "RelativeToolTip": "Clinic.Domain\\Entities\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:05:33.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Supplier.cs",
+              "RelativeDocumentMoniker": "Clinic.Domain\\Entities\\Supplier.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Supplier.cs",
+              "RelativeToolTip": "Clinic.Domain\\Entities\\Supplier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:05:06.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Appointment.cs",
+              "RelativeDocumentMoniker": "Clinic.Domain\\Entities\\Appointment.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Appointment.cs",
+              "RelativeToolTip": "Clinic.Domain\\Entities\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:04:52.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Clinic.Domain\\Entities\\Product.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "Clinic.Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:03:29.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "Clinic.Domain\\Entities\\Category.cs",
+              "ToolTip": "D:\\University\\SoftwareEngineering\\FinalProject\\ClinicSolution\\Clinic.Domain\\Entities\\Category.cs",
+              "RelativeToolTip": "Clinic.Domain\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:02:35.831Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

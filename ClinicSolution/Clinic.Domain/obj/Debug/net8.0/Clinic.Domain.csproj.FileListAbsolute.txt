@@ -1,0 +1,12 @@
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\Debug\net8.0\Clinic.Domain.csproj.AssemblyReference.cache
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\Debug\net8.0\Clinic.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\Debug\net8.0\Clinic.Domain.AssemblyInfoInputs.cache
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\Debug\net8.0\Clinic.Domain.AssemblyInfo.cs
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\Debug\net8.0\Clinic.Domain.csproj.CoreCompileInputs.cache
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\bin\Debug\net8.0\Clinic.Domain.deps.json
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\bin\Debug\net8.0\Clinic.Domain.dll
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\bin\Debug\net8.0\Clinic.Domain.pdb
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\Debug\net8.0\Clinic.Domain.dll
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\Debug\net8.0\refint\Clinic.Domain.dll
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\Debug\net8.0\Clinic.Domain.pdb
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\Debug\net8.0\ref\Clinic.Domain.dll
