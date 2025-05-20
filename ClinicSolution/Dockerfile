@@ -2,14 +2,17 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Копіюємо всі проєкти
-COPY . .
+# Копіюємо csproj окремо, щоб кешувалося restore
+COPY Clinic.Api/Clinic.Api.csproj ./Clinic.Api/
 
 # Встановлюємо залежності
-WORKDIR /src/Clinic.Api
-RUN dotnet restore
+RUN dotnet restore ./Clinic.Api/Clinic.Api.csproj
+
+# Копіюємо всі інші файли
+COPY . .
 
 # Публікуємо додаток
+WORKDIR /src/Clinic.Api
 RUN dotnet publish -c Release -o /app/publish
 
 # --- Runtime Stage ---
