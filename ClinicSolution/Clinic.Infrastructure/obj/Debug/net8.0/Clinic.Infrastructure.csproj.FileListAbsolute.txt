@@ -15,3 +15,4 @@ D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Infrastruct
 D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Infrastructure\obj\Debug\net8.0\ref\Clinic.Infrastructure.dll
 D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Infrastructure\bin\Debug\net8.0\Clinic.Infrastructure.runtimeconfig.json
 D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Infrastructure\obj\Debug\net8.0\Clinic.Infrastructure.genruntimeconfig.cache
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Infrastructure\obj\Debug\net8.0\Clinic.Infrastructure.sourcelink.json

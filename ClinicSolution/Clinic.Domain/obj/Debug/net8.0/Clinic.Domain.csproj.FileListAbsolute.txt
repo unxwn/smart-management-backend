@@ -10,3 +10,4 @@ D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\
 D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\Debug\net8.0\refint\Clinic.Domain.dll
 D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\Debug\net8.0\Clinic.Domain.pdb
 D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\Debug\net8.0\ref\Clinic.Domain.dll
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Domain\obj\Debug\net8.0\Clinic.Domain.sourcelink.json

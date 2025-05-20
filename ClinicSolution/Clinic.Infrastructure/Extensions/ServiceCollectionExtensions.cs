@@ -17,5 +17,15 @@ namespace Clinic.Infrastructure.Extensions
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             return services;
         }
+
+        public static IServiceCollection AddAivenDb(this IServiceCollection services, IConfiguration config)
+        {
+            var connStr = config.GetConnectionString("AivenDbClinic");
+            services.AddDbContext<ClinicContext>(opts =>
+                opts.UseMySql(connStr, ServerVersion.AutoDetect(connStr)));
+
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            return services;
+        }
     }
 }

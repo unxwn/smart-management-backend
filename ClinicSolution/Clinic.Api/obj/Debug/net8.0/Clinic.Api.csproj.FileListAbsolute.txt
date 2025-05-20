@@ -124,4 +124,5 @@ D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Api\bin\Deb
 D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Api\obj\Debug\net8.0\Clinic.Api.sourcelink.json
 D:\University\SoftwareEngineering\FinalProject\ClinicSolution\Clinic.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
