@@ -1,8 +1,8 @@
 ﻿namespace Clinic.Domain.Models.DTOs
 {
-    public class UserDto
+    public class CategoryDto
     {
         public int Id { get; set; }
-        public string Username { get; set; } = null!;
+        public string Name { get; set; } = null!;
     }
 }
