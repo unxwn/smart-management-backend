@@ -1,33 +1,24 @@
-# Етап 1: Побудова
+# --- Build Stage ---
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Копіюємо файли проекту
-COPY ClinicSolution.sln .
-COPY Clinic.Api/Clinic.Api.csproj Clinic.Api/
-COPY Clinic.Infrastructure/Clinic.Infrastructure.csproj Clinic.Infrastructure/
-COPY Clinic.Domain/Clinic.Domain.csproj Clinic.Domain/
+# Копіюємо csproj окремо, щоб кешувалося restore
+COPY Clinic.Api/Clinic.Api.csproj ./Clinic.Api/
 
-# Відновлюємо залежності
-RUN dotnet restore
+# Встановлюємо залежності
+RUN dotnet restore ./Clinic.Api/Clinic.Api.csproj
 
-# Копіюємо решту файлів
+# Копіюємо всі інші файли
 COPY . .
 
 # Публікуємо додаток
 WORKDIR /src/Clinic.Api
 RUN dotnet publish -c Release -o /app/publish
 
-# Етап 2: Запуск
+# --- Runtime Stage ---
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/publish .
 
-# Встановлюємо змінну середовища для порту
-ENV ASPNETCORE_URLS=http://+:8080
-
-# Відкриваємо порт
-EXPOSE 8080
-
-# Запускаємо додаток
+# Вхідна точка
 ENTRYPOINT ["dotnet", "Clinic.Api.dll"]
