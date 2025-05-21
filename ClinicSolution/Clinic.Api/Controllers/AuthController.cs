@@ -15,32 +15,32 @@ namespace Clinic.Api.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        private readonly IMapper _mapper;
         private readonly ClinicContext _context;
         private readonly IConfiguration _config;
+        private readonly IMapper _mapper;
 
-        public AuthController(IMapper _mapper, ClinicContext context, IConfiguration config)
+        public AuthController(ClinicContext context, IConfiguration config, IMapper mapper)
         {
-            this._mapper = _mapper;
             _context = context;
             _config = config;
+            _mapper = mapper;
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] UserDto userDto)
+        public async Task<IActionResult> Register([FromBody] AuthUserDto authUserDto)
         {
-            userDto.Password = BCrypt.Net.BCrypt.HashPassword(userDto.Password);
-            User user = _mapper.Map<User>(userDto);
+            authUserDto.Password = BCrypt.Net.BCrypt.HashPassword(authUserDto.Password);
+            User user = _mapper.Map<User>(authUserDto);
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
             return Ok();
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] UserDto userDto)
+        public async Task<IActionResult> Login([FromBody] AuthUserDto authUserDto)
         {
-            User? user = await _context.Users.FirstOrDefaultAsync(x => x.Username == userDto.Username);
-            if (user == null || !BCrypt.Net.BCrypt.Verify(userDto.Password, user.Password))
+            User? user = await _context.Users.FirstOrDefaultAsync(x => x.Username == authUserDto.Username);
+            if (user == null || !BCrypt.Net.BCrypt.Verify(authUserDto.Password, user.Password))
                 return Unauthorized();
 
             var token = GenerateJwtToken(user);

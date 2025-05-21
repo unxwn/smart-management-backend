@@ -11,45 +11,56 @@ namespace Clinic.Api.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public class MedicalRecordsController : ControllerBase
+    public class MedicalRecordController : ControllerBase
     {
-        private readonly IMapper _mapper;
         private readonly ClinicContext _context;
-        public MedicalRecordsController(IMapper _mapper, ClinicContext context)
+        private readonly IMapper _mapper;
+
+        public MedicalRecordController(ClinicContext context, IMapper mapper)
         {
-            this._mapper = _mapper;
             _context = context;
+            _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            IEnumerable<MedicalRecord> medicalRecords = await _context.MedicalRecords.ToListAsync();
-            IEnumerable<MedicalRecordDto> medicalRecordsDtos = _mapper.Map<IEnumerable<MedicalRecordDto>>(medicalRecords);
-            return Ok(medicalRecordsDtos);
+            List<MedicalRecord> medicalRecords = await _context.MedicalRecords.ToListAsync();
+            List<MedicalRecordDto> medicalRecordDtos = _mapper.Map<List<MedicalRecordDto>>(medicalRecords);
+            return Ok(medicalRecordDtos);
         }
-        
+
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var item = await _context.MedicalRecords.FindAsync(id);
-            if (item == null) return NotFound();
-            return Ok(item);
+            MedicalRecord? medicalRecord = await _context.MedicalRecords.FindAsync(id);
+            if (medicalRecord == null)
+                return NotFound();
+            MedicalRecordDto medicalRecordDto = _mapper.Map<MedicalRecordDto>(medicalRecord);
+            return Ok(medicalRecordDto);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] MedicalRecord record)
+        public async Task<IActionResult> Create([FromBody] MedicalRecord medicalRecordDto)
         {
-            _context.MedicalRecords.Add(record);
+            MedicalRecord medicalRecord = _mapper.Map<MedicalRecord>(medicalRecordDto);
+            _context.MedicalRecords.Add(medicalRecord);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(Get), new { id = record.Id }, record);
+
+            return CreatedAtAction(nameof(Get), new { id = medicalRecordDto.Id }, medicalRecordDto);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] MedicalRecord record)
+        public async Task<IActionResult> Update(int id, [FromBody] MedicalRecordDto medicalRecordDto)
         {
-            if (id != record.Id) return BadRequest();
-            _context.Entry(record).State = EntityState.Modified;
+            if (id != medicalRecordDto.Id)
+                return BadRequest();
+
+            MedicalRecord? medicalRecord = await _context.MedicalRecords.FindAsync(id);
+            if (medicalRecord == null)
+                return NotFound();
+
+            _mapper.Map(medicalRecordDto, medicalRecord);
             await _context.SaveChangesAsync();
             return NoContent();
         }
@@ -57,9 +68,11 @@ namespace Clinic.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var item = await _context.MedicalRecords.FindAsync(id);
-            if (item == null) return NotFound();
-            _context.MedicalRecords.Remove(item);
+            MedicalRecord? medicalRecord = await _context.MedicalRecords.FindAsync(id);
+            if (medicalRecord == null)
+                return NotFound();
+
+            _context.MedicalRecords.Remove(medicalRecord);
             await _context.SaveChangesAsync();
             return NoContent();
         }

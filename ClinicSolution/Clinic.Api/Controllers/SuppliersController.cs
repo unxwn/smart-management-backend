@@ -1,4 +1,6 @@
-﻿using Clinic.Domain.Models.Entities;
+﻿using AutoMapper;
+using Clinic.Domain.Models.DTOs;
+using Clinic.Domain.Models.Entities;
 using Clinic.Infrastructure.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -9,35 +11,56 @@ namespace Clinic.Api.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public class SuppliersController : ControllerBase
+    public class SupplierController : ControllerBase
     {
         private readonly ClinicContext _context;
-        public SuppliersController(ClinicContext context) => _context = context;
+        private readonly IMapper _mapper;
+
+        public SupplierController(ClinicContext context, IMapper mapper)
+        {
+            _context = context;
+            _mapper = mapper;
+        }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll() => Ok(await _context.Suppliers.ToListAsync());
+        public async Task<IActionResult> GetAll()
+        {
+            List<Supplier> suppliers = await _context.Suppliers.ToListAsync();
+            List<SupplierDto> supplierDtos = _mapper.Map<List<SupplierDto>>(suppliers);
+            return Ok(supplierDtos);
+        }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var item = await _context.Suppliers.FindAsync(id);
-            if (item == null) return NotFound();
-            return Ok(item);
+            Supplier? supplier = await _context.Suppliers.FindAsync(id);
+            if (supplier == null)
+                return NotFound();
+            SupplierDto supplierDto = _mapper.Map<SupplierDto>(supplier);
+            return Ok(supplierDto);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Supplier supplier)
+        public async Task<IActionResult> Create([FromBody] Supplier supplierDto)
         {
+            Supplier supplier = _mapper.Map<Supplier>(supplierDto);
             _context.Suppliers.Add(supplier);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(Get), new { id = supplier.Id }, supplier);
+
+            return CreatedAtAction(nameof(Get), new { id = supplierDto.Id }, supplierDto);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Supplier supplier)
+        public async Task<IActionResult> Update(int id, [FromBody] SupplierDto supplierDto)
         {
-            if (id != supplier.Id) return BadRequest();
-            _context.Entry(supplier).State = EntityState.Modified;
+            if (id != supplierDto.Id)
+                return BadRequest();
+
+            Supplier? supplier = await _context.Suppliers.FindAsync(id);
+            if (supplier == null)
+                return NotFound();
+
+            _mapper.Map(supplierDto, supplier);
             await _context.SaveChangesAsync();
             return NoContent();
         }
@@ -45,9 +68,11 @@ namespace Clinic.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var item = await _context.Suppliers.FindAsync(id);
-            if (item == null) return NotFound();
-            _context.Suppliers.Remove(item);
+            Supplier? supplier = await _context.Suppliers.FindAsync(id);
+            if (supplier == null)
+                return NotFound();
+
+            _context.Suppliers.Remove(supplier);
             await _context.SaveChangesAsync();
             return NoContent();
         }

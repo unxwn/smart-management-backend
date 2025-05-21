@@ -1,4 +1,6 @@
-﻿using Clinic.Domain.Models.Entities;
+﻿using AutoMapper;
+using Clinic.Domain.Models.DTOs;
+using Clinic.Domain.Models.Entities;
 using Clinic.Infrastructure.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -9,35 +11,56 @@ namespace Clinic.Api.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public class CategoriesController : ControllerBase
+    public class CategoryController : ControllerBase
     {
         private readonly ClinicContext _context;
-        public CategoriesController(ClinicContext context) => _context = context;
+        private readonly IMapper _mapper;
+
+        public CategoryController(ClinicContext context, IMapper mapper)
+        {
+            _context = context;
+            _mapper = mapper;
+        }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll() => Ok(await _context.Categories.ToListAsync());
+        public async Task<IActionResult> GetAll()
+        {
+            List<Category> categories = await _context.Categories.ToListAsync();
+            List<CategoryDto> categoryDtos = _mapper.Map<List<CategoryDto>>(categories);
+            return Ok(categoryDtos);
+        }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var item = await _context.Categories.FindAsync(id);
-            if (item == null) return NotFound();
-            return Ok(item);
+            Category? category = await _context.Categories.FindAsync(id);
+            if (category == null)
+                return NotFound();
+            CategoryDto categoryDto = _mapper.Map<CategoryDto>(category);
+            return Ok(categoryDto);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Category category)
+        public async Task<IActionResult> Create([FromBody] Category categoryDto)
         {
+            Category category = _mapper.Map<Category>(categoryDto);
             _context.Categories.Add(category);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(Get), new { id = category.Id }, category);
+
+            return CreatedAtAction(nameof(Get), new { id = categoryDto.Id }, categoryDto);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Category category)
+        public async Task<IActionResult> Update(int id, [FromBody] CategoryDto categoryDto)
         {
-            if (id != category.Id) return BadRequest();
-            _context.Entry(category).State = EntityState.Modified;
+            if (id != categoryDto.Id)
+                return BadRequest();
+
+            Category? category = await _context.Categories.FindAsync(id);
+            if (category == null)
+                return NotFound();
+
+            _mapper.Map(categoryDto, category);
             await _context.SaveChangesAsync();
             return NoContent();
         }
@@ -45,9 +68,11 @@ namespace Clinic.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var item = await _context.Categories.FindAsync(id);
-            if (item == null) return NotFound();
-            _context.Categories.Remove(item);
+            Category? category = await _context.Categories.FindAsync(id);
+            if (category == null)
+                return NotFound();
+
+            _context.Categories.Remove(category);
             await _context.SaveChangesAsync();
             return NoContent();
         }
