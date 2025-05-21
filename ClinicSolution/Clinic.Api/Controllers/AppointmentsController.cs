@@ -11,12 +11,12 @@ namespace Clinic.Api.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public class AppointmentController : ControllerBase
+    public class AppointmentsController : ControllerBase
     {
         private readonly ClinicContext _context;
         private readonly IMapper _mapper;
 
-        public AppointmentController(ClinicContext context, IMapper mapper)
+        public AppointmentsController(ClinicContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -41,7 +41,7 @@ namespace Clinic.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Appointment appointmentDto)
+        public async Task<IActionResult> Create([FromBody] AppointmentDto appointmentDto)
         {
             Appointment appointment = _mapper.Map<Appointment>(appointmentDto);
             _context.Appointments.Add(appointment);

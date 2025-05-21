@@ -1,4 +1,6 @@
-﻿namespace Clinic.Domain.Models.DTOs
+﻿using Clinic.Domain.Models.Entities;
+
+namespace Clinic.Domain.Models.DTOs
 {
     public class AppointmentDto
     {
@@ -6,7 +8,7 @@
         public int PatientId { get; set; }
         public int DoctorId { get; set; }
         public DateTime ScheduledDate { get; set; }
-        public string Status { get; set; } = null!;
+        public AppointmentStatus Status { get; set; }
     }
 
 }
