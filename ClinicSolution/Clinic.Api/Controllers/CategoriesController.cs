@@ -11,12 +11,12 @@ namespace Clinic.Api.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public class CategoryController : ControllerBase
+    public class CategoriesController : ControllerBase
     {
         private readonly ClinicContext _context;
         private readonly IMapper _mapper;
 
-        public CategoryController(ClinicContext context, IMapper mapper)
+        public CategoriesController(ClinicContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -25,7 +25,9 @@ namespace Clinic.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            List<Category> categories = await _context.Categories.ToListAsync();
+            List<Category> categories = await _context.Categories
+                .Include(v => v.Products)
+                .ToListAsync();
             List<CategoryDto> categoryDtos = _mapper.Map<List<CategoryDto>>(categories);
             return Ok(categoryDtos);
         }
@@ -33,7 +35,9 @@ namespace Clinic.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            Category? category = await _context.Categories.FindAsync(id);
+            Category? category = await _context.Categories
+                .Include(v => v.Products)
+                .SingleOrDefaultAsync(v => v.Id == id);
             if (category == null)
                 return NotFound();
             CategoryDto categoryDto = _mapper.Map<CategoryDto>(category);

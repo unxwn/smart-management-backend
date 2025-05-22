@@ -11,12 +11,12 @@ namespace Clinic.Api.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public class PaymentController : ControllerBase
+    public class PaymentsController : ControllerBase
     {
         private readonly ClinicContext _context;
         private readonly IMapper _mapper;
 
-        public PaymentController(ClinicContext context, IMapper mapper)
+        public PaymentsController(ClinicContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -33,7 +33,7 @@ namespace Clinic.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            Payment? payment = await _context.Payments.FindAsync(id);
+            Payment? payment = await _context.Payments.SingleOrDefaultAsync(v => v.Id == id);
             if (payment == null)
                 return NotFound();
             PaymentDto paymentDto = _mapper.Map<PaymentDto>(payment);

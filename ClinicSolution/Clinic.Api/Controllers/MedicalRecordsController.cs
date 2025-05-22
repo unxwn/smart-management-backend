@@ -12,12 +12,12 @@ namespace Clinic.Api.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public class MedicalRecordController : ControllerBase
+    public class MedicalRecordsController : ControllerBase
     {
         private readonly ClinicContext _context;
         private readonly IMapper _mapper;
 
-        public MedicalRecordController(ClinicContext context, IMapper mapper)
+        public MedicalRecordsController(ClinicContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -34,7 +34,7 @@ namespace Clinic.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            MedicalRecord? medicalRecord = await _context.MedicalRecords.FindAsync(id);
+            MedicalRecord? medicalRecord = await _context.MedicalRecords.SingleOrDefaultAsync(v => v.Id == id);
             if (medicalRecord == null)
                 return NotFound();
             MedicalRecordDto medicalRecordDto = _mapper.Map<MedicalRecordDto>(medicalRecord);

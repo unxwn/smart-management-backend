@@ -11,12 +11,12 @@ namespace Clinic.Api.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public class SupplierController : ControllerBase
+    public class SuppliersController : ControllerBase
     {
         private readonly ClinicContext _context;
         private readonly IMapper _mapper;
 
-        public SupplierController(ClinicContext context, IMapper mapper)
+        public SuppliersController(ClinicContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -25,7 +25,9 @@ namespace Clinic.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            List<Supplier> suppliers = await _context.Suppliers.ToListAsync();
+            List<Supplier> suppliers = await _context.Suppliers
+                .Include(v => v.Products)
+                .ToListAsync();
             List<SupplierDto> supplierDtos = _mapper.Map<List<SupplierDto>>(suppliers);
             return Ok(supplierDtos);
         }
@@ -33,7 +35,9 @@ namespace Clinic.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            Supplier? supplier = await _context.Suppliers.FindAsync(id);
+            Supplier? supplier = await _context.Suppliers
+                .Include(v => v.Products)
+                .SingleOrDefaultAsync(v => v.Id == id);
             if (supplier == null)
                 return NotFound();
             SupplierDto supplierDto = _mapper.Map<SupplierDto>(supplier);

@@ -33,7 +33,7 @@ namespace Clinic.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            Appointment? appointment = await _context.Appointments.FindAsync(id);
+            Appointment? appointment = await _context.Appointments.SingleOrDefaultAsync(v => v.Id == id);
             if (appointment == null)
                 return NotFound();
             AppointmentDto appointmentDto = _mapper.Map<AppointmentDto>(appointment);

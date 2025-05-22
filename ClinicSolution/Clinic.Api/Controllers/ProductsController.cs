@@ -11,12 +11,12 @@ namespace Clinic.Api.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public class ProductController : ControllerBase
+    public class ProductsController : ControllerBase
     {
         private readonly ClinicContext _context;
         private readonly IMapper _mapper;
 
-        public ProductController(ClinicContext context, IMapper mapper)
+        public ProductsController(ClinicContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -33,7 +33,7 @@ namespace Clinic.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            Product? product = await _context.Products.FindAsync(id);
+            Product? product = await _context.Products.SingleOrDefaultAsync(v => v.Id == id);
             if (product == null)
                 return NotFound();
             ProductDto productDto = _mapper.Map<ProductDto>(product);

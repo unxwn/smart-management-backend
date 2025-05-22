@@ -11,12 +11,12 @@ namespace Clinic.Api.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
-    public class PatientController : ControllerBase
+    public class PatientsController : ControllerBase
     {
         private readonly ClinicContext _context;
         private readonly IMapper _mapper;
 
-        public PatientController(ClinicContext context, IMapper mapper)
+        public PatientsController(ClinicContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
@@ -25,7 +25,12 @@ namespace Clinic.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            List<Patient> patients = await _context.Patients.ToListAsync();
+            List<Patient> patients = await _context.Patients
+                .Include(v => v.Visits)
+                .Include(v => v.Appointments)
+                .Include(v => v.Payments)
+                .Include(v => v.MedicalRecords)
+                .ToListAsync();
             List<PatientDto> patientDtos = _mapper.Map<List<PatientDto>>(patients);
             return Ok(patientDtos);
         }
@@ -33,7 +38,12 @@ namespace Clinic.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            Patient? patient = await _context.Patients.FindAsync(id);
+            Patient? patient = await _context.Patients
+                .Include(v => v.Visits)
+                .Include(v => v.Appointments)
+                .Include(v => v.Payments)
+                .Include(v => v.MedicalRecords)
+                .SingleOrDefaultAsync(v => v.Id == id);
             if (patient == null)
                 return NotFound();
             PatientDto patientDto = _mapper.Map<PatientDto>(patient);
