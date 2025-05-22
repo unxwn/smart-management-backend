@@ -41,13 +41,15 @@ namespace Clinic.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Payment paymentDto)
+        public async Task<IActionResult> Create([FromBody] PaymentDto paymentDto)
         {
             Payment payment = _mapper.Map<Payment>(paymentDto);
+            payment.Id = 0;
             _context.Payments.Add(payment);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(Get), new { id = paymentDto.Id }, paymentDto);
+            PaymentDto resultDto = _mapper.Map<PaymentDto>(payment);
+            return CreatedAtAction(nameof(Get), new { id = resultDto.Id }, resultDto);
         }
 
         [HttpPut("{id}")]

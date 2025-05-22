@@ -5,6 +5,7 @@ using Clinic.Infrastructure.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Numerics;
 
 namespace Clinic.Api.Controllers
 {
@@ -41,13 +42,15 @@ namespace Clinic.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] MedicalRecord medicalRecordDto)
+        public async Task<IActionResult> Create([FromBody] MedicalRecordDto medicalRecordDto)
         {
             MedicalRecord medicalRecord = _mapper.Map<MedicalRecord>(medicalRecordDto);
+            medicalRecord.Id = 0;
             _context.MedicalRecords.Add(medicalRecord);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(Get), new { id = medicalRecordDto.Id }, medicalRecordDto);
+            MedicalRecordDto resultDto = _mapper.Map<MedicalRecordDto>(medicalRecord);
+            return CreatedAtAction(nameof(Get), new { id = resultDto.Id }, resultDto);
         }
 
         [HttpPut("{id}")]

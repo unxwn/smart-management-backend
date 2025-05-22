@@ -25,7 +25,9 @@ namespace Clinic.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            List<Visit> visits = await _context.Visits.ToListAsync();
+            List<Visit> visits = await _context.Visits
+                .Include(v => v.Prescriptions)
+                .ToListAsync();
             List<VisitDto> visitDtos = _mapper.Map<List<VisitDto>>(visits);
             return Ok(visitDtos);
         }
@@ -41,13 +43,15 @@ namespace Clinic.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Visit visitDto)
+        public async Task<IActionResult> Create([FromBody] VisitDto visitDto)
         {
             Visit visit = _mapper.Map<Visit>(visitDto);
+            visit.Id = 0;
             _context.Visits.Add(visit);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(Get), new { id = visitDto.Id }, visitDto);
+            VisitDto resultDto = _mapper.Map<VisitDto>(visit);
+            return CreatedAtAction(nameof(Get), new { id = resultDto.Id }, resultDto);
         }
 
         [HttpPut("{id}")]
