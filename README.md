@@ -82,6 +82,5 @@ https://your-deployed-api.com/swagger
 ---
 
 👤 Authors
-Fullstack: [unxwn](https://github.com/unxwn)
-
-Frontend: [rokytskyii](https://github.com/rokytskyii)
+- Fullstack: [unxwn](https://github.com/unxwn)
+- Frontend: [rokytskyii](https://github.com/rokytskyii)
